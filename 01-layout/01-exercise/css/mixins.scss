@@ -1,0 +1,23 @@
+@mixin bg-color($color) {
+  .base-color {
+    background-color: $color;
+  }
+
+  @for $i from 1 to 5 {
+    .darken-#{$i} {
+      background-color: $color - (25% * $i);
+
+      .color-box-text {
+        color: gray;
+      }
+    }
+
+    .lighten-#{$i} {
+      background-color: $color + (25% * $i);
+
+      .color-box-text {
+        color: gray;
+      }
+    }
+  }
+}

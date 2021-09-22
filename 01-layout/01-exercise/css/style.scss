@@ -1,0 +1,52 @@
+@import 'mixins';
+
+//COLOR BOX
+$color-primary: red;
+$color-secondary: blue;
+$color-tertiary: green;
+
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 1200px;
+  height: 768px;
+  gap: 10px;
+}
+
+.container-box {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: 1fr;
+  gap: 10px;
+}
+
+.box {
+  color: white;
+  width: 120px;
+  height: 100px;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  line-height: 100px;
+}
+
+.container-box-1 {
+  @include bg-color($color-primary);
+}
+
+.container-box-2 {
+  @include bg-color($color-secondary);
+}
+
+.container-box-3 {
+  @include bg-color($color-tertiary);
+}
