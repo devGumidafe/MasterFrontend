@@ -8,6 +8,7 @@
 
 body{
     font-family: $font-primary;
+    color: $font-color;
 }
 
 .container {
@@ -29,10 +30,12 @@ body{
 
 .font{
     border: 0;
+    color: #000;
 }
 
 .font__primary{
     font-family: $font-primary;
+    margin-bottom: 10px;
 }
 
 .font__secondary{
@@ -53,4 +56,5 @@ body{
 
 .shadow{
     box-shadow: $b-shadow;
+    color: #000;
 }
