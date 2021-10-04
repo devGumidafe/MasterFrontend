@@ -1,0 +1,23 @@
+{
+  "name": "laboratorios",
+  "version": "1.0.0",
+  "description": "Temas:   - **Layout:** Building layouts with HMTL / CSS 3, SASS...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devGumidafe/MasterFronted.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devGumidafe/MasterFronted/issues"
+  },
+  "homepage": "https://github.com/devGumidafe/MasterFronted#readme",
+  "devDependencies": {
+    "sass": "^1.42.1"
+  }
+}
