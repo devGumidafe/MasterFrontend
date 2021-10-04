@@ -6,7 +6,7 @@
   @for $i from 1 to 5 {
     .darken-#{$i} {
       background-color: $color - (25% * $i);
-
+    //darken($color, (i * 10%))
       .color-box-text {
         color: gray;
       }
@@ -14,7 +14,7 @@
 
     .lighten-#{$i} {
       background-color: $color + (25% * $i);
-
+      //lighten($color, (i * 10%))
       .color-box-text {
         color: gray;
       }
