@@ -1,0 +1,20 @@
+.footer-container {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 2rem;
+  background-color: #000000;
+  color: #fff;
+
+  @media screen and (max-width: 1000px) {
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 425px) {
+    font-size: 0.6rem;
+  }
+}
+
+

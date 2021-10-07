@@ -1,0 +1,39 @@
+@import "header";
+@import "menu";
+@import "main";
+@import "footer";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0.5fr repeat(2, 1fr);
+  grid-template-rows: 0.3fr auto 0.3fr;
+  grid-template-areas:
+    "header header header"
+    "menu main main"
+    "footer footer footer";
+ 
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.2fr auto 0.2fr;
+    grid-template-areas:
+      "header"
+      "menu"
+      "main"
+      "footer";
+  }
+}

@@ -1,0 +1,26 @@
+.main-container {
+  background-color: #fff;
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.card-img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
