@@ -20,10 +20,11 @@ $color-box: chocolate;
 }
 
 .container-box {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  grid-auto-flow: column;
-  gap: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   @include bg-color($color-box);
 }
 
