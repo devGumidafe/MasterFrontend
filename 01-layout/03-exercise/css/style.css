@@ -38,7 +38,7 @@
     background-color: #264653;
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:768px) {
     .container {
         padding: 2rem;
     }
