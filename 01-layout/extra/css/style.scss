@@ -29,9 +29,8 @@ body {
  
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 0.2fr auto 0.2fr;
+    grid-template-rows:  0.2fr auto 0.2fr;
     grid-template-areas:
-      "header"
       "menu"
       "main"
       "footer";
