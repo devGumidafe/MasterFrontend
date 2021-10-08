@@ -1,0 +1,25 @@
+@import "header";
+@import "main";
+@import "footer";
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body{
+    min-height: 100%;   
+}
+
+body{
+    background-color:#141414;
+    color:#fff;
+    font-size:16px;
+    font-family: 'Jost', sans-serif;
+    gap:2rem;
+    padding:2rem;
+    display:flex;
+    flex-direction: column;
+}
