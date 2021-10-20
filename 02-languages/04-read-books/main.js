@@ -7,16 +7,10 @@ const books = [
   { title: "Código Limpio", isRead: false },
 ];
 
-const isBookRead = (bookList, title) => {
-  let result = false;
+const isBookRead = (bookList, title) =>
+  bookList.some((book) => book.title === title && book.isRead);
 
-  bookList.map((book) => {
-    if (book.title === title) result = book.isRead;
-  });
-
-  return result;
-};
-
+  
 console.log(isBookRead(books, "Devastación")); // true
 console.log(isBookRead(books, "Canción de hielo y fuego")); // false
 console.log(isBookRead(books, "Los Pilares de la Tierra")); // false
