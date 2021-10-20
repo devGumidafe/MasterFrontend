@@ -1,12 +1,23 @@
 // 1. CLONE
-const clone = (source) => (typeof source === "object" ? { ...source } : {});
+const clone = (source) => (typeof source === "object" ? { ...source } : source);
 
 console.log(
   clone({ name: "Gumidafe", surname: "Socorro", age: 38, country: "Spain" })
 );
 
-const deepClone = (source) =>
-  typeof source === "object" ? JSON.parse(JSON.stringify(source)) : {};
+const deepClone = (source) => {
+  let outObject;
+
+  if (typeof source !== "object" || source === null) return source;
+
+  outObject = Array.isArray(source) ? [] : {};
+
+  for (key in source) {
+    outObject[key] = deepClone(source[key]);
+  }
+
+  return outObject;
+};
 
 console.log(
   deepClone({
@@ -15,6 +26,7 @@ console.log(
     age: 38,
     country: "Spain",
     address: { city: "Las Palmas", number: 201, postal: "35018" },
+    colors: ["white", "black", "blue"],
   })
 );
 
