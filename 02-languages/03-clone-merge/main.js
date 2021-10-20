@@ -12,7 +12,7 @@ const deepClone = (source) => {
 
   outObject = Array.isArray(source) ? [] : {};
 
-  for (key in source) {
+  for (let key in source) {
     outObject[key] = deepClone(source[key]);
   }
 
