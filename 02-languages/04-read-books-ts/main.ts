@@ -10,7 +10,7 @@ class CheckBook {
     }
 }
 
-const books: Book[] = [
+const booksList: Book[] = [
     { title: "Harry Potter y la piedra filosofal", isRead: true },
     { title: "Canción de hielo y fuego", isRead: false },
     { title: "Devastación", isRead: true },
@@ -19,7 +19,7 @@ const books: Book[] = [
 ];
 
 
-console.log(CheckBook.isBookRead(books, "Devastación")); // true
-console.log(CheckBook.isBookRead(books, "Canción de hielo y fuego")); // false
-console.log(CheckBook.isBookRead(books, "Los Pilares de la Tierra")); // false
-console.log(CheckBook.isBookRead(books, "Hijos del dios binario")); // true
+console.log(CheckBook.isBookRead(booksList, "Devastación")); // true
+console.log(CheckBook.isBookRead(booksList, "Canción de hielo y fuego")); // false
+console.log(CheckBook.isBookRead(booksList, "Los Pilares de la Tierra")); // false
+console.log(CheckBook.isBookRead(booksList, "Hijos del dios binario")); // true
