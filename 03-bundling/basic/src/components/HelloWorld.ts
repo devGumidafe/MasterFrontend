@@ -1,0 +1,1 @@
+export const hello = (men: string): string => `Hello Webpack ${men}`;
