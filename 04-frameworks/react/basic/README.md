@@ -12,4 +12,4 @@ npm install
 
 
 ## Demo
-[Demo APP](http://react-basic.gumidev.com)
+[Demo APP](http://react-basic.gumidev.com){:target="_blank"}
