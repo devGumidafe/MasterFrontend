@@ -1,0 +1,2 @@
+<app-menu-public *ngIf="!(isLogged() | async)"></app-menu-public>
+<app-menu-private *ngIf="isLogged() | async"></app-menu-private>

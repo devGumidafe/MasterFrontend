@@ -1,0 +1,60 @@
+.menu-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: .8rem;
+}
+
+.menu-left {
+  flex: 2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  padding-right: .5rem;
+}
+
+.name-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .2rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.link:hover {
+  opacity: 0.8;
+}
+
+.selected {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 40px;
+  height: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .menu-container {
+    font-size: 1.2rem;
+  }
+}
